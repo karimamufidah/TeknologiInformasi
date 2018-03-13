@@ -4,7 +4,7 @@
  */
  
 $databaseHost = 'localhost';
-$databaseName = 'data_rima';
+$databaseName = 'teknologiinformasi';
 $databaseUsername = 'root';
 $databasePassword = '';
  

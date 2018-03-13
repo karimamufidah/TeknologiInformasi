@@ -18,10 +18,4 @@ $validator->fields(['name','email'])->areRequired()->maxLength(50);
 $validator->field('email')->isEmail();
 $validator->field('message')->maxLength(6000);
 
-
-$pp->requireCaptcha();
-
-
-$pp->sendEmailTo('karimamufidah@gmail.com'); // ← Your email here
-
 echo $pp->process($_POST);

@@ -1,6 +1,6 @@
-create database data_rima;
+create database teknologiinformasi;
  
-use data_rima;
+use teknologiinformasi;
  
 CREATE TABLE `users` (
   `id` int(11) NOT NULL auto_increment,

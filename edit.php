@@ -12,10 +12,10 @@ if(isset($_POST['update']))
 	$message=$_POST['message'];
 		
 	// update user data
-	$result = mysqli_query($mysqli, "UPDATE users SET name='$name',email='$email',message='$message' WHERE id=$id");
+	$result = mysqli_query($mysqli, "UPDATE users SET name='$name',email='$email', message='$message' WHERE id=$id");
 	
 	// Redirect to homepage to display updated user in list
-	header("Location: crud.php");
+	header("Location: indexcrud.php");
 }
 ?>
 <?php
@@ -30,7 +30,7 @@ while($user_data = mysqli_fetch_array($result))
 {
 	$name = $user_data['name'];
 	$email = $user_data['email'];
-	$message = $user_data['message'];
+	$message =$user_data['message'];
 }
 ?>
 <html>
@@ -39,13 +39,13 @@ while($user_data = mysqli_fetch_array($result))
 </head>
  
 <body>
-	<a href="crud.php">Home</a>
+	<a href="indexcrud.php">Home</a>
 	<br/><br/>
 	
 	<form name="update_user" method="post" action="edit.php">
 		<table border="0">
 			<tr> 
-				<td>Name</td>
+				<td>Nama</td>
 				<td><input type="text" name="name" value=<?php echo $name;?>></td>
 			</tr>
 			<tr> 
@@ -53,7 +53,7 @@ while($user_data = mysqli_fetch_array($result))
 				<td><input type="text" name="email" value=<?php echo $email;?>></td>
 			</tr>
 			<tr> 
-				<td>Message</td>
+				<td>Pesan</td>
 				<td><input type="text" name="message" value=<?php echo $message;?>></td>
 			</tr>
 			<tr>
