@@ -645,7 +645,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</ul>
 		</div>	
 		<div class="clearfix"></div>	
-		<form action="#" method="post" name="sentMessage" id="contactForm" novalidate>
+		<form action="<?php echo base_url(). 'admin/tambah_aksi'; ?>" method="post" name="sentMessage" id="contactForm" novalidate>
             <div class="col-lg-4 col-md-4 col-sm-4" data-aos="zoom-in">    
 				<div class="control-group form-group">
                     <div class="controls">
@@ -683,7 +683,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!-- For success/fail messages -->
 			</div>
 			<div class="col-lg-12" data-aos="zoom-in">	
-                <button type="submit" class="btn btn-primary">Send Message</button>
+                <input type="submit" class="btn btn-primary" value="Send">
             </div>
 			<div class="clearfix"></div>	
 		</form>	
@@ -764,7 +764,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div> -->
 	<p class="copyright">© 2018 Scholastic. All Rights Reserved | Design by <a href="https://w3layouts.com/" target="_blank">w3layouts</a>
     <br>
-    <a href="indexlogin.php">Login</a></p>
+    <a href="Login">Login</a> | 
+    <a href="<?php echo site_url('report') ?>">Report</a> | <a href="<?php echo site_url('chart') ?>">Statistic</a>
+    </p>
 	<!-- <div class="modal fade" id="news1" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
 		<div class="modal-dialog modal-lg">
 			<div class="modal-content">
